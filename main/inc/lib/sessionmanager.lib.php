@@ -2815,7 +2815,7 @@ class SessionManager
         $sday_end
     ) {
         $tbl_session_category = Database::get_main_table(TABLE_MAIN_SESSION_CATEGORY);
-        $name = trim($sname);
+        $name = html_filter(trim($sname));
         $year_start = intval($syear_start);
         $month_start = intval($smonth_start);
         $day_start = intval($sday_start);
@@ -2893,7 +2893,7 @@ class SessionManager
         $sday_end
     ) {
         $tbl_session_category = Database::get_main_table(TABLE_MAIN_SESSION_CATEGORY);
-        $name = trim($sname);
+        $name = html_filter(trim($sname));
         $year_start = intval($syear_start);
         $month_start = intval($smonth_start);
         $day_start = intval($sday_start);
